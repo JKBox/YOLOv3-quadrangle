@@ -14,7 +14,7 @@ This work detects obejcts in arbitrary directions with quadrangle, and implement
 ## Train
 Check the -data_config_path and -cfg in train.py. 
 
-Dataset folder is organized as follow:
+Dataset folder is organized as follows:
 
 * Dataset
     * images
