@@ -24,16 +24,12 @@ The label format: class x1 y1 x2 y2 x3 y3 x4 y4
 
 For example (0 493 115 519 115 519 131 493 131)
 
-```python
-$ python3 train.py
-```
+`$ python3 train.py`
 
 ## Inference
 Checkpoints are saved in weights.
 
-```python
-$ python3 detect.py
-```
+`$ python3 detect.py`
 
 ![](data/1.jpg)
 ![](data/2.jpg)
