@@ -26,6 +26,14 @@ For example (0 493 115 519 115 519 131 493 131)
 
 `$ python3 train.py`
 
+## Train for your own dataset
+
+- Modify `yolov3.cfg` file
+  - Change `[yolo]` classes with the number of classes in your own dataset.
+  - Replace the value of filters in `[convolutional]` which lays above `[yolo]`, filters should be `3 * (8 + 1 + num_classes)`, where `8` means 8 offsets of the quadrangle, `1` means objectness confidence.
+- Modify `cfg/*.data` where classes field should be your number of classes in your dataset
+- Modify `data/*names` and put your labels in it. 
+
 ## Inference
 Checkpoints are saved in weights.
 
